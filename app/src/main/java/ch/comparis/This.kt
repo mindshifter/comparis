@@ -1,10 +1,10 @@
 package ch.comparis
 
 import android.app.Application
+import ch.comparis.repo.MakesLocalRepo
 
 class This : Application() {
-    override fun onCreate() {
-        super.onCreate()
-
+    companion object {
+        val localRepo = MakesLocalRepo()
     }
 }
