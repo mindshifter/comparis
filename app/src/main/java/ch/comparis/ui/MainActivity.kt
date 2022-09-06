@@ -15,9 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        makesViewModel = ViewModelProvider(this).get<MakesViewModel>()
-
+        makesViewModel = ViewModelProvider(this).get()
         makesViewModel.favoritesCount.observe(this) {
             binding.makesFavoriteCount.text = it.toString()
         }

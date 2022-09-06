@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:padding="16dp"
     tools:context=".ui.MainActivity">
 
     <TextView
@@ -12,13 +11,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textStyle="bold"
+        android:padding="16dp"
+        android:textSize="16sp"
         tools:text="BMW" />
 
     <ImageButton
         android:id="@+id/isFavoriteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="16dp"
         android:src="@drawable/ic_baseline_favorite_border_24" />
 </LinearLayout>
